@@ -8,24 +8,58 @@
   <link rel="stylesheet" href="./dist/styles.css">
   <link rel="stylesheet" href="./src/custom.css">
   <script src="https://unpkg.com/ionicons@4.2.0/dist/ionicons.js"></script>
-
+  <script src="./src/nav.js"></script>
 </head>
 
-<body class="bg-grey-lightest">
+<body class="bg-grey-lightest font-crimson">
+  <nav class="flex items-center justify-between flex-wrap bg-blue-darkest p-6 z-10">
+    <div class="flex items-center flex-no-shrink text-white mr-6">
+      <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+        />
+      </svg>
+      <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+    </div>
+    <div class="block lg:hidden">
+      <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-darkest hover:bg-white"
+        onclick="myFunction()">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+    <div class="w-full hidden lg:block flex-grow lg:flex lg:items-center lg:w-auto" id="nav">
+      <div class="text-sm lg:flex-grow">
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+          Docs
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+          Examples
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white">
+          Blog
+        </a>
+      </div>
+      <div>
+        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0">Download</a>
+      </div>
+    </div>
+  </nav>
   <section id="intro" class="bg-white mb-16">
     <div class="min-h-screen flex items-center justify-center flex-col">
-      <h1 class="md:text-5xl text-center text-green-dark font-sans mb-8">Dr. Ann E. Stapleton</h1>
+      <h1 class="text-4xl md:text-5xl text-center text-blue-darker mb-8">Dr. Ann E. Stapleton</h1>
       <ul class="list-reset text-center md:flex md:mb-16">
-        <li class="text-2xl text-green-dark py-4 my:py-0 md:px-8 ">Researcher</li>
-        <li class="text-2xl text-green-dark py-4 my:py-0 md:px-8 ">Innovator</li>
-        <li class="text-2xl text-green-dark py-4 my:py-0 md:px-8 ">Mentor</li>
+        <li class="text-2xl text-blue-darker py-4 my:py-0 md:px-8 ">Researcher</li>
+        <li class="text-2xl text-blue-darker py-4 my:py-0 md:px-8 ">Innovator</li>
+        <li class="text-2xl text-blue-darker py-4 my:py-0 md:px-8 ">Mentor</li>
       </ul>
-      <ion-icon class="text-green-dark text-4xl mt-16" name="arrow-down"></ion-icon>
+      <ion-icon class="text-blue-darker text-4xl mt-16" name="arrow-down"></ion-icon>
     </div>
   </section>
   <section id="about" class="mb-16">
     <div class="px-8 md:px-0 md:w-1/2 mx-auto text-center">
-      <h1 class="text-5xl text-green-dark font-sans mb-8 ">About</h1>
+      <h1 class="text-4xl md:text-5xl text-blue-darker mb-8 ">About</h1>
       <p class="leading-normal text-center">Dr. Ann E. Stapleton’s research is focused on experimental testing of genotype-environment-phenotype models and systems
         modeling and she has more than ten years experience in development of cyberinfrastructure for biology. She has published
         in computer science, statistics, and biology journals. She was elected the Chair of the 2017 Gordon Research Conference
@@ -33,99 +67,83 @@
         professional science master’s program in data science.</p>
     </div>
   </section>
-  <section id="publications" class="mb-16 bg-white">
+  <section id="publications" class="pb-8 bg-white">
     <div class="w-full md:w-1/2 mx-auto text-center">
-      <h1 class="text-5xl text-green-dark font-sans mb-8 pt-16">Publications &amp; Projects</h1>
-      <div class="flex flex-col w-full mb-4">
-        <div class="px-6 py-4 shadow-lg text-center m-8">
+      <h1 class="text-4xl md:text-5xl text-blue-darker mb-8 pt-16">Publications &amp; Projects</h1>
+      <div class="flex flex-col w-full">
+        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
           <div class="mb-4">
-            <h2>Publications</h2>
-            <p class="leading-tight">You can find all of my publications by clicking the button below</p>
-          </div>
-          <div>
-            <a href="https://scholar.google.com/citations?hl=en&user=MfwDLb0AAAAJ&sortby=pubdate&view_op=list_works" class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-green-dark text-green-dark hover:bg-green-dark hover:text-white">See More</a>
+            <h2 class="mb-2">Publications</h2>
+            <p class="leading-tight mb-6">You can find all of my publications by clicking the button below</p>
+            <a href="https://scholar.google.com/citations?hl=en&user=MfwDLb0AAAAJ&sortby=pubdate&view_op=list_works" class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center m-8">
+        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
           <div class="mb-4">
-            <h2>EnviroTyping</h2>
-            <p class="leading-tight">Genetically-Informed EnviroTyping Tools to Better Test and Target Environments</p>
-          </div>
-          <div>
-            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-green-dark text-green-dark hover:bg-green-dark hover:text-white">See More</a>
+            <h2 class="mb-2">EnviroTyping</h2>
+            <p class="leading-tight mb-6">Genetically-Informed EnviroTyping Tools to Better Test and Target Environments</p>
+            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center m-8">
+        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
           <div class="mb-4">
-            <h2>Validate 1.0</h2>
-            <p class="leading-tight">Test predictions, integrate applications, and manage GWAS and prediction applications in parallel</p>
-          </div>
-          <div>
-            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-green-dark text-green-dark hover:bg-green-dark hover:text-white">See More</a>
+            <h2 class="mb-2">Validate 1.0</h2>
+            <p class="leading-tight mb-6">Test predictions, integrate applications, and manage GWAS and prediction applications in parallel</p>
+            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="about" class="mb-16">
+  <section id="about" class="pb-8">
     <div class="w-full md:w-1/2 mx-auto text-center px-4 md:px-0">
-      <h1 class="text-5xl text-green-dark font-sans mb-8">Interaction</h1>
+      <h1 class="text-4xl md:text-5xl text-blue-darker pt-16 mb-8">Interaction</h1>
       <p class="leading-normal text-center">More than 50 research students have been supported by my federal grants in the last five years, and I encourage networking
         among my students and with many other students and colleagues. My research students have gone on to successful careers
         in fields ranging from plant breeding informatics to biostatistics to high-school science teaching. Career mentoring
         and training in project management is a key part of my student mentoring strategy.</p>
     </div>
   </section>
-  <section id="publications" class="mb-16 bg-white">
+  <section id="publications" class="pb-8 bg-white">
     <div class="w-full md:w-1/2 mx-auto text-center">
-      <h1 class="text-5xl text-green-dark font-sans mb-8 pt-16">Impact</h1>
+      <h1 class="text-4xl md:text-5xl text-blue-darker mb-8 pt-16">Impact</h1>
       <div class="flex flex-col w-full mb-4">
-        <div class="px-6 py-4 shadow-lg text-center m-8">
+        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
           <div class="mb-4">
-            <h2 class="leading-tight">2016 Science Olympiad Outstanding Volunteer Award</h2>
-          </div>
-          <div>
-            <button class="text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-green-dark text-green-dark hover:bg-green-dark hover:text-white">See More</button>
+            <h2 class="leading-tight mb-6">2016 Science Olympiad Outstanding Volunteer Award</h2>
+            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center m-8">
+        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
           <div class="mb-4">
-            <h2  class="leading-tight">Published with Statistician and Computer Science Collaborators</h2  >
-          </div>
-          <div>
-            <button class="text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-green-dark text-green-dark hover:bg-green-dark hover:text-white">See More</button>
+            <h2 class="leading-tight mb-6">Published with Statistician and Computer Science Collaborators</h2>
+            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center m-8">
+        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
           <div class="mb-4">
-            <h2  class="leading-tight">UNCW Mentor Award</h2 >
-          </div>
-          <div>
-            <button class="text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-green-dark text-green-dark hover:bg-green-dark hover:text-white">See More</button>
+            <h2 class="leading-tight mb-6">UNCW Mentor Award</h2>
+            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center m-8">
+        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
           <div class="mb-4">
-            <h2  class="leading-tight">Chair of Gordon Research Conference on Quantitative Genetics</h2  >
-          </div>
-          <div>
-            <button class="text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-green-dark text-green-dark hover:bg-green-dark hover:text-white">See More</button>
+            <h2 class="leading-tight mb-6">Chair of Gordon Research Conference on Quantitative Genetics</h2>
+            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center m-8">
+        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
           <div class="mb-4">
-            <h2  class="leading-tight">Faculty Lead for Development and Approval of UNCW Data Science Graduate Program</h2 >
-          </div>
-          <div>
-            <button class="text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-green-dark text-green-dark hover:bg-green-dark hover:text-white">See More</button>
+            <h2 class="leading-tight mb-6">Faculty Lead for Development and Approval of UNCW Data Science Graduate Program</h2>
+            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="contact" class="mb-16">
+  <section id="contact" class="pb-8">
     <div class="md:w-1/2 mx-auto text-center">
-      <h1 class="text-5xl text-green-dark font-sans mb-8 ">Contact</h1>
+      <h1 class="text-4xl md:text-5xl text-blue-darker mb-8 pt-16">Contact</h1>
       <div class="flex flex-col">
         <div class="mb-8">
           <ion-icon class="text-2xl align-middle mr-4" name="mail"></ion-icon>
@@ -143,10 +161,7 @@
           <ion-icon class="text-2xl align-middle mr-4" name="compass"></ion-icon>
           <h3 class="inline-block">Friday Hall 2062</h3>
         </div>
-
       </div>
-
-
     </div>
   </section>
 </body>

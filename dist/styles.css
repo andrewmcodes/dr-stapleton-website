@@ -1,4 +1,4 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -4775,6 +4775,10 @@ button,
 
 .z-auto {
   z-index: auto;
+}
+
+.font-crimson {
+  font-family: 'Crimson Text', serif;
 }
 
 @media (min-width: 576px) {
