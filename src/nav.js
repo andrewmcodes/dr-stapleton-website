@@ -1,9 +1,7 @@
-function myFunction() {
-    var x = document.getElementById("nav");
-    if (x.className === "hidden") {
-        x.classList.toggle("hidden");
-    } else {
-        console.log("nav");
-        x.className = "hidden";
-    }
+document.addEventListener("DOMContentLoaded", function(){
+  document.getElementById("js-nav-menu-button").addEventListener("click", toggleMenu)
+});
+
+function toggleMenu() {
+  document.getElementById("js-nav-menu").classList.toggle("hidden");
 }
