@@ -1,5 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text);/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
+@keyframes ArrowDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 40px;
+  }
+}
+
+.arrow-down {
+    animation: ArrowDown 4s linear infinite;
+    position: absolute;
+}
 /* Document
    ========================================================================== */
 
