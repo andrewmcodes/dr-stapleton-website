@@ -4801,21 +4801,20 @@ p {
   text-decoration: none;
   font-size: .75rem;
   font-weight: 600;
-  border-radius: 9999px;
+  border-radius: .25rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
   line-height: 1.5;
-  background-color: #fff;
-  border-width: 1px;
-  border-color: #1c3d5a;
-  color: #1c3d5a;
+  background-color: #12283a;
+  color: #fff;
 }
 
 .btn:hover {
-  background-color: #1c3d5a;
-  color: #fff;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  transition-timing-function: linear;
+  transition-duration: 200ms;
 }
 
 @keyframes ArrowDown {
@@ -4832,7 +4831,7 @@ p {
 .arrow-down {
   animation: ArrowDown 4s linear infinite;
   position: absolute;
-  color: #fff;
+  color: #12283a;
 }
 
 /* Nav */
@@ -4907,12 +4906,13 @@ p {
 
 .home {
   padding-bottom: 2rem;
+  background-color: #fff;
 }
 
 .header {
   font-size: 2.25rem;
   text-align: center;
-  color: #fff;
+  color: #12283a;
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
@@ -4925,7 +4925,7 @@ p {
 
 .home-list-item {
   font-size: 1.5rem;
-  color: #fff;
+  color: #12283a;
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
@@ -4939,12 +4939,12 @@ p {
 
 .publications {
   padding-bottom: 2rem;
-  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  background-color: #fff;
 }
 
 .impact {
   padding-bottom: 2rem;
-  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  background-color: #fff;
 }
 
 .about,

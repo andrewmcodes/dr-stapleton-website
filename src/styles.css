@@ -17,10 +17,12 @@ p {
 }
 /* buttons */
 .btn {
-  @apply no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker;
+  @apply no-underline text-xs font-semibold rounded px-4 py-2 leading-normal bg-blue-darkest text-white;
 }
 .btn:hover {
-  @apply bg-blue-darker text-white
+  @apply shadow-lg;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
 }
 @keyframes ArrowDown {
   0%, 100% {
@@ -33,7 +35,7 @@ p {
 .arrow-down {
     animation: ArrowDown 4s linear infinite;
     position: absolute;
-    @apply text-white;
+    @apply text-blue-darkest;
 }
 /* Nav */
 .nav {
@@ -66,27 +68,25 @@ p {
 }
 /* sections */
 .home {
-  @apply pb-8;
+  @apply pb-8 bg-white;
 }
 .header {
-  @apply text-4xl text-center text-white mt-12 mb-8;
+  @apply text-4xl text-center text-blue-darkest mt-12 mb-8;
 }
 .home-list {
   @apply list-reset text-center;
 }
 .home-list-item {
-  @apply text-2xl text-white py-2;
+  @apply text-2xl text-blue-darkest py-2;
 }
 .home-container {
   @apply h-80vh flex items-center flex-col;
 }
 .publications {
-  @apply pb-8;
-    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  @apply pb-8 bg-white;
 }
 .impact {
-  @apply pb-8;
-  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  @apply pb-8 bg-white;
 }
 .about, .contact {
   @apply pb-8 bg-grey-lightest;
@@ -154,8 +154,8 @@ p {
     @apply justify-center;
   }
   .section-subheader {
-  @apply text-4xl;
-}
+    @apply text-4xl;
+  }
   .comment-items {
     @apply mx-8;
   }
