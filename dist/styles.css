@@ -4837,6 +4837,12 @@ p {
   color: #fff;
 }
 
+.arrow-icon {
+  color: #fff;
+  font-size: 2.25rem;
+  margin-top: 4rem;
+}
+
 /* Nav */
 
 .nav {

@@ -40,6 +40,9 @@ p {
     position: absolute;
     @apply text-white;
 }
+.arrow-icon {
+  @apply text-white text-4xl mt-16;
+}
 /* Nav */
 .nav {
   @apply w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 font-sans fixed shadow-lg border-t-4 border-blue-darkest;
