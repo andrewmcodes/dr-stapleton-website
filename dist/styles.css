@@ -4817,6 +4817,13 @@ p {
   transition-duration: 200ms;
 }
 
+.transition {
+  overflow-y: hidden;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, .5, 1);
+}
+
 @keyframes ArrowDown {
   0%,
   100% {
@@ -4837,6 +4844,7 @@ p {
 /* Nav */
 
 .nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -4845,6 +4853,10 @@ p {
   padding: 1.5rem;
   z-index: 10;
   font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  position: fixed;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  border-top-width: 4px;
+  border-color: #12283a;
 }
 
 .nav-brand {
@@ -4900,6 +4912,7 @@ p {
 .section-content {
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* sections */
@@ -5024,8 +5037,26 @@ p {
 
 .contact-icon {
   font-size: 1.5rem;
-  vertical-align: middle;
+  vertical-align: top;
   margin-right: 1rem;
+}
+
+.footer-container {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #fff;
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin-bottom: .5rem;
 }
 
 @media (min-width: 576px) {

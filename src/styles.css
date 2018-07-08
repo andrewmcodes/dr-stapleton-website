@@ -24,6 +24,12 @@ p {
   transition-timing-function: linear;
   transition-duration: 200ms;
 }
+.transition {
+  overflow-y: hidden;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
 @keyframes ArrowDown {
   0%, 100% {
     bottom: 50px;
@@ -39,7 +45,7 @@ p {
 }
 /* Nav */
 .nav {
-  @apply flex items-center justify-between flex-wrap bg-white p-6 z-10 font-sans;
+  @apply w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 font-sans fixed shadow-lg border-t-4 border-blue-darkest;
 }
 .nav-brand {
   @apply flex items-center flex-no-shrink text-blue-darkest mr-6;
@@ -64,7 +70,7 @@ p {
   @apply text-3xl text-blue-darker mb-8;
 }
 .section-content {
-  @apply px-8;
+  @apply px-8 mb-8;
 }
 /* sections */
 .home {
@@ -121,7 +127,13 @@ p {
   @apply px-6 py-4 shadow-lg text-center my-4 border-t-4 border-blue-darkest rounded-sm bg-white;
 }
 .contact-icon {
-  @apply text-2xl align-middle mr-4;
+  @apply text-2xl align-top mr-4;
+}
+.footer-container {
+  @apply px-0 py-8 w-full mx-auto text-center;
+}
+.footer-text {
+  @apply text-base text-white font-sans mb-2;
 }
 @screen sm {
   .carousel {

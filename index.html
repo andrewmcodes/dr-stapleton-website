@@ -16,7 +16,7 @@
       <span class="font-semibold text-xl">Dr. Ann E. Stapleton</span>
     </div>
     <div class="nav-btn">
-      <button class="flex items-center px-3 py-2 border rounded text-blue-darkest border-blue-darkest hover:text-blue-darkest hover:bg-white" id="js-nav-menu-button">
+      <button class="flex items-center px-3 py-2 rounded text-white hover:text-blue-darkest hover:bg-white" id="js-nav-menu-button">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <title>Menu</title>
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -26,37 +26,40 @@
     <div class="nav-menu" id="js-nav-menu">
       <div class="flex items-center justify-center">
         <div class="text-sm lg:flex-grow text-center">
-          <a href="#home" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest hover:text-white md:mr-4">
+          <a href="#home" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-4 font-semibold border-b-2 border-white hover:border-blue-darkest">
             Home
           </a>
-          <a href="#about" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest hover:text-white md:mr-4">
+          <a href="#about" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-4 font-semibold border-b-2 border-white hover:border-blue-darkest">
             About
           </a>
-          <a href="#publications" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest hover:text-white md:mr-4">
+          <a href="#publications" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-4 font-semibold border-b-2 border-white hover:border-blue-darkest">
             Publications &amp; Projects
           </a>
-          <a href="#interaction" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest hover:text-white md:mr-4">
+          <a href="#interaction" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-4 font-semibold border-b-2 border-white hover:border-blue-darkest">
             Interaction
           </a>
-          <a href="#impact" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest hover:text-white md:mr-4">
+          <a href="#impact" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-4 font-semibold border-b-2 border-white hover:border-blue-darkest">
             Impact
           </a>
         </div>
       </div>
       <div class="flex items-center justify-center lg:content-end text-center">
-        <a href="#contact" class="no-underline inline-block text-sm px-4 py-2 leading-none border rounded text-blue-darkest border-blue-darkest hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0">Contact</a>
+        <a href="#contact" class="btn mt-4 lg:mt-0">Contact</a>
       </div>
     </div>
   </nav>
   <section id="home" class="home">
-    <div class="home-container">
+    <div class="home-container relative">
       <h1 class="header">Dr. Ann E. Stapleton</h1>
       <ul class="home-list">
         <li class="home-list-item ">Researcher</li>
         <li class="home-list-item ">Innovator</li>
         <li class="home-list-item ">Mentor</li>
       </ul>
+      <a href="#about" class="transition">
       <ion-icon class="text-blue-darker text-4xl mt-16 arrow-down" name="arrow-down"></ion-icon>
+
+      </a>
     </div>
   </section>
   <section id="about" class="about">
@@ -67,6 +70,7 @@
         in computer science, statistics, and biology journals. She was elected the Chair of the 2017 Gordon Research Conference
         on Quantitative Genetics and Genomics and recently served as the faculty lead to develop and approve a new interdisciplinary
         professional science master’s program in data science.</p>
+        <a class="btn">See My CV</a>
     </div>
   </section>
   <section id="publications" class="publications">
@@ -229,6 +233,12 @@
       </div>
     </div>
   </section>
+  <footer>
+    <div class="footer-container">
+      <p class="footer-text">© 2018 Ann E. Stapleton</p>
+      <p class="footer-text">Designed and developed by Onshore Studios</p>
+    </div>
+  </footer>
   <script src="./src/main.js"></script>
 </body>
 
