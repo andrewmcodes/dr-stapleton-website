@@ -12,9 +12,6 @@ body {
 p {
   font-family: 'Crimson Text', serif;
 }
-.gradient {
-  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
-}
 /* buttons */
 .btn {
   @apply no-underline text-xs font-semibold rounded px-4 py-2 leading-normal bg-blue-darkest text-white;
@@ -32,16 +29,16 @@ p {
 }
 @keyframes ArrowDown {
   0%, 100% {
-    bottom: 50px;
+    bottom: 25px;
   }
   50% {
-    bottom: 75px;
+    bottom: 50px;
   }
 }
 .arrow-down {
     animation: ArrowDown 4s linear infinite;
     position: absolute;
-    @apply text-blue-darkest;
+    @apply text-white;
 }
 /* Nav */
 .nav {
@@ -74,19 +71,20 @@ p {
 }
 /* sections */
 .home {
-  @apply pb-8 bg-white;
+  @apply pb-8;
+  background-image: linear-gradient(to top, #12283A 0%, #1c3d5a 100%);
 }
 .header {
-  @apply text-4xl text-center text-blue-darkest mt-12 mb-8;
+  @apply text-4xl text-center text-white mt-12 mb-8 pt-16;
 }
 .home-list {
   @apply list-reset text-center;
 }
 .home-list-item {
-  @apply text-2xl text-blue-darkest py-2;
+  @apply text-2xl text-white py-2;
 }
 .home-container {
-  @apply h-80vh flex items-center flex-col;
+  @apply h-screen flex items-center flex-col;
 }
 .publications {
   @apply pb-8 bg-white;
@@ -133,7 +131,10 @@ p {
   @apply px-0 py-8 w-full mx-auto text-center;
 }
 .footer-text {
-  @apply text-base text-white font-sans mb-2;
+  @apply text-xs text-white font-sans mb-2;
+}
+.contact-link {
+  @apply no-underline text-blue-darkest;
 }
 @screen sm {
   .carousel {
@@ -142,7 +143,7 @@ p {
 }
 @screen md {
   .header {
-    @apply text-5xl mt-0;
+    @apply text-5xl mt-0 pt-0;
   }
   .section-header {
     @apply text-5xl;
@@ -163,7 +164,7 @@ p {
     @apply flex mb-16;
   }
   .home-container {
-    @apply justify-center;
+    @apply justify-center h-80vh;
   }
   .section-subheader {
     @apply text-4xl;
@@ -171,6 +172,9 @@ p {
   .comment-items {
     @apply mx-8;
   }
+  .footer-text {
+  @apply text-base;
+}
 }
 
 @screen lg {

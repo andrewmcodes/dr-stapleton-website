@@ -4791,10 +4791,6 @@ p {
   font-family: 'Crimson Text', serif;
 }
 
-.gradient {
-  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
-}
-
 /* buttons */
 
 .btn {
@@ -4827,18 +4823,18 @@ p {
 @keyframes ArrowDown {
   0%,
   100% {
-    bottom: 50px;
+    bottom: 25px;
   }
 
   50% {
-    bottom: 75px;
+    bottom: 50px;
   }
 }
 
 .arrow-down {
   animation: ArrowDown 4s linear infinite;
   position: absolute;
-  color: #12283a;
+  color: #fff;
 }
 
 /* Nav */
@@ -4919,15 +4915,16 @@ p {
 
 .home {
   padding-bottom: 2rem;
-  background-color: #fff;
+  background-image: linear-gradient(to top, #12283a 0%, #1c3d5a 100%);
 }
 
 .header {
   font-size: 2.25rem;
   text-align: center;
-  color: #12283a;
+  color: #fff;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  padding-top: 4rem;
 }
 
 .home-list {
@@ -4938,13 +4935,13 @@ p {
 
 .home-list-item {
   font-size: 1.5rem;
-  color: #12283a;
+  color: #fff;
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
 
 .home-container {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -5053,10 +5050,15 @@ p {
 }
 
 .footer-text {
-  font-size: 1rem;
+  font-size: .75rem;
   color: #fff;
   font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   margin-bottom: .5rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #12283a;
 }
 
 @media (min-width: 576px) {
@@ -5069,6 +5071,7 @@ p {
   .header {
     font-size: 3rem;
     margin-top: 0;
+    padding-top: 0;
   }
 
   .section-header {
@@ -5104,6 +5107,7 @@ p {
 
   .home-container {
     justify-content: center;
+    height: 80vh;
   }
 
   .section-subheader {
@@ -5113,6 +5117,10 @@ p {
   .comment-items {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .footer-text {
+    font-size: 1rem;
   }
 }
 
