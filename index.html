@@ -10,105 +10,104 @@
   <script src="https://unpkg.com/ionicons@4.2.0/dist/ionicons.js"></script>
 </head>
 
-<body class="bg-grey-lightest font-crimson">
-  <nav class="flex items-center justify-between flex-wrap bg-blue-darkest p-6 z-10 font-sans">
-    <div class="flex items-center flex-no-shrink text-white mr-6">
-      <span class="font-semibold text-xl tracking-tight">Dr. Ann E. Stapleton</span>
+<body>
+  <nav class="nav">
+    <div class="nav-brand">
+      <span class="font-semibold text-xl">Dr. Ann E. Stapleton</span>
     </div>
-    <div class="block lg:hidden">
-      <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-darkest hover:bg-white"
-        id="js-nav-menu-button">
+    <div class="nav-btn">
+      <button class="flex items-center px-3 py-2 border rounded text-blue-darkest border-blue-darkest hover:text-blue-darkest hover:bg-white" id="js-nav-menu-button">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <title>Menu</title>
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
         </svg>
       </button>
     </div>
-    <div class="hidden w-full lg:block flex-grow lg:flex lg:justify-between lg:items-center lg:w-auto" id="js-nav-menu">
+    <div class="nav-menu" id="js-nav-menu">
       <div class="flex items-center justify-center">
-        <div class="text-sm lg:flex-grow">
-          <a href="#home" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-           Home
+        <div class="text-sm lg:flex-grow text-center">
+          <a href="#home" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest hover:text-white md:mr-4">
+            Home
           </a>
-          <a href="#about" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+          <a href="#about" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest hover:text-white md:mr-4">
             About
           </a>
-          <a href="#publications" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+          <a href="#publications" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest hover:text-white md:mr-4">
             Publications &amp; Projects
           </a>
-          <a href="#interaction" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+          <a href="#interaction" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest hover:text-white md:mr-4">
             Interaction
           </a>
-          <a href="#impact" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+          <a href="#impact" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest hover:text-white md:mr-4">
             Impact
           </a>
         </div>
       </div>
-      <div class="flex items-center justify-center lg:content-end">
-        <a href="#contact" class="no-underline inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0">Contact</a>
+      <div class="flex items-center justify-center lg:content-end text-center">
+        <a href="#contact" class="no-underline inline-block text-sm px-4 py-2 leading-none border rounded text-blue-darkest border-blue-darkest hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0">Contact</a>
       </div>
     </div>
   </nav>
-  <section id="home" class="bg-white mb-16">
-    <div class="min-h-screen flex items-center justify-center flex-col">
-      <h1 class="text-4xl md:text-5xl text-center text-blue-darker mb-8">Dr. Ann E. Stapleton</h1>
-      <ul class="list-reset text-center md:flex md:mb-16">
-        <li class="text-2xl text-blue-darker py-4 my:py-0 md:px-8 ">Researcher</li>
-        <li class="text-2xl text-blue-darker py-4 my:py-0 md:px-8 ">Innovator</li>
-        <li class="text-2xl text-blue-darker py-4 my:py-0 md:px-8 ">Mentor</li>
+  <section id="home" class="home gradient">
+    <div class="home-container">
+      <h1 class="header">Dr. Ann E. Stapleton</h1>
+      <ul class="home-list">
+        <li class="home-list-item ">Researcher</li>
+        <li class="home-list-item ">Innovator</li>
+        <li class="home-list-item ">Mentor</li>
       </ul>
       <ion-icon class="text-blue-darker text-4xl mt-16 arrow-down" name="arrow-down"></ion-icon>
     </div>
   </section>
-  <section id="about" class="mb-16">
-    <div class="px-8 md:px-0 md:w-1/2 mx-auto text-center">
-      <h1 class="text-4xl md:text-5xl text-blue-darker mb-8 ">About</h1>
-      <p class="leading-normal text-center">Dr. Ann E. Stapleton’s research is focused on experimental testing of genotype-environment-phenotype models and systems
+  <section id="about" class="about">
+    <div class="section-container">
+      <h1 class="section-header">About</h1>
+      <p class="section-content">Dr. Ann E. Stapleton’s research is focused on experimental testing of genotype-environment-phenotype models and systems
         modeling and she has more than ten years experience in development of cyberinfrastructure for biology. She has published
         in computer science, statistics, and biology journals. She was elected the Chair of the 2017 Gordon Research Conference
         on Quantitative Genetics and Genomics and recently served as the faculty lead to develop and approve a new interdisciplinary
         professional science master’s program in data science.</p>
     </div>
   </section>
-  <section id="publications" class="pb-8 bg-white">
-    <div class="w-full md:w-1/2 mx-auto text-center">
-      <h1 class="text-4xl md:text-5xl text-blue-darker mb-8 pt-16">Publications &amp; Projects</h1>
+  <section id="publications" class="publications">
+    <div class="section-container">
+      <h1 class="section-header-alternate">Publications &amp; Projects</h1>
       <div class="flex flex-col w-full">
-        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
+        <div class="card">
           <div class="mb-4">
-            <h2 class="mb-2">Publications</h2>
-            <p class="leading-tight mb-6">You can find all of my publications by clicking the button below</p>
-            <a href="https://scholar.google.com/citations?hl=en&user=MfwDLb0AAAAJ&sortby=pubdate&view_op=list_works" class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
+            <h2 class="card-header-alternate">Publications</h2>
+            <p class="card-text">You can find all of my publications by clicking the button below</p>
+            <a href="https://scholar.google.com/citations?hl=en&user=MfwDLb0AAAAJ&sortby=pubdate&view_op=list_works" class="btn">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
+        <div class="card">
           <div class="mb-4">
-            <h2 class="mb-2">EnviroTyping</h2>
-            <p class="leading-tight mb-6">Genetically-Informed EnviroTyping Tools to Better Test and Target Environments</p>
-            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
+            <h2 class="card-header-alternate">EnviroTyping</h2>
+            <p class="card-text">Genetically-Informed EnviroTyping Tools to Better Test and Target Environments</p>
+            <a class="btn">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
+        <div class="card">
           <div class="mb-4">
-            <h2 class="mb-2">Validate 1.0</h2>
-            <p class="leading-tight mb-6">Test predictions, integrate applications, and manage GWAS and prediction applications in parallel</p>
-            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
+            <h2 class="card-header-alternate">Validate 1.0</h2>
+            <p class="card-text">Test predictions, integrate applications, and manage GWAS and prediction applications in parallel</p>
+            <a class="btn">See More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="interaction" class="pb-8">
-    <div class="w-full md:w-1/2 mx-auto text-center px-4 md:px-0">
-      <h1 class="text-4xl md:text-5xl text-blue-darker pt-16 mb-8">Interaction</h1>
-      <p class="leading-normal text-center">More than 50 research students have been supported by my federal grants in the last five years, and I encourage networking
+  <section id="interaction" class="interaction">
+    <div class="section-container">
+      <h1 class="section-header">Interaction</h1>
+      <p class="section-content">More than 50 research students have been supported by my federal grants in the last five years, and I encourage networking
         among my students and with many other students and colleagues. My research students have gone on to successful careers
         in fields ranging from plant breeding informatics to biostatistics to high-school science teaching. Career mentoring
         and training in project management is a key part of my student mentoring strategy.</p>
-      <div class="h-48 mt-8 mb-12">
-              <h2 class="text-3xl md:text-4xl text-blue-darker mb-8">Student Comments</h2>
-        <div class="bg-white px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm mySlides">
-          <div class="mb-4">
+      <div class="carousel">
+        <h2 class="section-header">Student Comments</h2>
+        <div class="comment-items mySlides">
+          <div class="lg:mb-4">
             <p>
               I’m in the middle of the 2nd year in the Immunobiology PhD program at University of Arizona- and I am absolutely loving it!
               I remind myself quite often how lucky I am to have the opportunity to further my education here and I know
@@ -118,8 +117,8 @@
             </p>
           </div>
         </div>
-        <div class="bg-white px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm mySlides">
-          <div class="mb-4">
+        <div class="comment-items mySlides">
+          <div class="lg:mb-4">
             <p>
               Being a new college student, I don’t think I was ready for the challenge of honors biology. It was a daunting challenge,
               but I know now that it really prepared me for my future classes. I’m taking a genetics class this semester,
@@ -129,8 +128,8 @@
             </p>
           </div>
         </div>
-        <div class="bg-white px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm mySlides">
-          <div class="mb-4">
+        <div class="comment-items mySlides">
+          <div class="lg:mb-4">
             <p>
               As my undergrad experience comes to an end I wanted to that you for all the initial effort you put into my education. From
               the thought provoking Honors Bio201 class to helping my find a lab that conducted research I liked, and everything
@@ -138,8 +137,8 @@
             </p>
           </div>
         </div>
-        <div class="bg-white px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm mySlides">
-          <div class="mb-4">
+        <div class="comment-items mySlides">
+          <div class="lg:mb-4">
             <p>
               Thank you so much for serving on my honors committee, but even more, thank you for your constant guidance throughout my undergraduate
               career. I can honestly say that I would not be where I am without your expertise and kindness. Thank you for
@@ -149,16 +148,16 @@
             </p>
           </div>
         </div>
-        <div class="bg-white px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm mySlides">
-          <div class="mb-4">
+        <div class="comment-items mySlides">
+          <div class="lg:mb-4">
             <p>
               You supported and guided me in my college career. You were my first biology professor. Your class was hard, but it prepared
               me for more difficult courses down the road. You were on my Honors project committee, and your advice was invaluable.
             </p>
           </div>
         </div>
-        <div class="bg-white px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm mySlides">
-          <div class="mb-4">
+        <div class="comment-items mySlides">
+          <div class="lg:mb-4">
             <p>
               I wanted to take a second to thank you from the bottom of my heart for the opportunity to be your student and work in your
               lab. I have grown immeasurably as a student and scientist during my time with you and have gained so many skills
@@ -170,61 +169,61 @@
       </div>
     </div>
   </section>
-  <section id="impact" class="pb-8 bg-white">
-    <div class="w-full md:w-1/2 mx-auto text-center">
-      <h1 class="text-4xl md:text-5xl text-blue-darker mb-8 pt-16">Impact</h1>
-      <div class="flex flex-col w-full mb-4">
-        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
+  <section id="impact" class="impact">
+    <div class="section-container">
+      <h1 class="section-header-alternate">Impact</h1>
+      <div class="card-container">
+        <div class="card">
           <div class="mb-4">
-            <h2 class="leading-tight mb-6">2016 Science Olympiad Outstanding Volunteer Award</h2>
-            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
+            <h2 class="card-header">2016 Science Olympiad Outstanding Volunteer Award</h2>
+            <a class="btn">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
+        <div class="card">
           <div class="mb-4">
-            <h2 class="leading-tight mb-6">Published with Statistician and Computer Science Collaborators</h2>
-            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
+            <h2 class="card-header">Published with Statistician and Computer Science Collaborators</h2>
+            <a class="btn">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
+        <div class="card">
           <div class="mb-4">
-            <h2 class="leading-tight mb-6">UNCW Mentor Award</h2>
-            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
+            <h2 class="card-header">UNCW Mentor Award</h2>
+            <a class="btn">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
+        <div class="card">
           <div class="mb-4">
-            <h2 class="leading-tight mb-6">Chair of Gordon Research Conference on Quantitative Genetics</h2>
-            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
+            <h2 class="card-header">Chair of Gordon Research Conference on Quantitative Genetics</h2>
+            <a class="btn">See More</a>
           </div>
         </div>
-        <div class="px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm">
+        <div class="card">
           <div class="mb-4">
-            <h2 class="leading-tight mb-6">Faculty Lead for Development and Approval of UNCW Data Science Graduate Program</h2>
-            <a class="no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker hover:bg-blue-darker hover:text-white">See More</a>
+            <h2 class="card-header">Faculty Lead for Development and Approval of UNCW Data Science Graduate Program</h2>
+            <a class="btn">See More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="contact" class="pb-8">
-    <div class="md:w-1/2 mx-auto text-center">
-      <h1 class="text-4xl md:text-5xl text-blue-darker mb-8 pt-16">Contact</h1>
-      <div class="flex flex-col">
-        <div class="mb-8">
-          <ion-icon class="text-2xl align-middle mr-4" name="mail"></ion-icon>
+  <section id="contact" class="contact">
+    <div class="section-container">
+      <h1 class="section-header">Contact</h1>
+      <div class="card-container">
+        <div class="card-alternate">
+          <ion-icon class="contact-icon" name="mail"></ion-icon>
           <h3 class="inline-block">stapletona@uncw.edu</h3>
         </div>
-        <div class="mb-8">
-          <ion-icon class="text-2xl align-middle mr-4" name="logo-linkedin"></ion-icon>
+        <div class="card-alternate">
+          <ion-icon class="contact-icon" name="logo-linkedin"></ion-icon>
           <h3 class="inline-block">Ann Stapleton</h3>
         </div>
-        <div class="mb-8">
-          <ion-icon class="text-2xl align-middle mr-4" name="call"></ion-icon>
+        <div class="card-alternate">
+          <ion-icon class="contact-icon" name="call"></ion-icon>
           <h3 class="inline-block">(910) 962-7267</h3>
         </div>
-        <div class="mb-8">
-          <ion-icon class="text-2xl align-middle mr-4" name="compass"></ion-icon>
+        <div class="card-alternate">
+          <ion-icon class="contact-icon" name="compass"></ion-icon>
           <h3 class="inline-block">Friday Hall 2062</h3>
         </div>
       </div>

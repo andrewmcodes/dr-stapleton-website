@@ -6,7 +6,169 @@
 
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 
-.font-crimson {
+body {
+  @apply bg-blue-darkest font-sans leading-normal;
+}
+p {
   font-family: 'Crimson Text', serif;
 }
+.gradient {
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+}
+/* buttons */
+.btn {
+  @apply no-underline text-xs font-semibold rounded-full px-4 py-2 leading-normal bg-white border border-blue-darker text-blue-darker;
+}
+.btn:hover {
+  @apply bg-blue-darker text-white
+}
+@keyframes ArrowDown {
+  0%, 100% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 75px;
+  }
+}
+.arrow-down {
+    animation: ArrowDown 4s linear infinite;
+    position: absolute;
+    @apply text-white;
+}
+/* Nav */
+.nav {
+  @apply flex items-center justify-between flex-wrap bg-white p-6 z-10 font-sans;
+}
+.nav-brand {
+  @apply flex items-center flex-no-shrink text-blue-darkest mr-6;
+}
+.nav-btn {
+  @apply block text-blue-darkest;
+}
+.nav-menu {
+  @apply hidden w-full text-blue-darkest;
+}
+/* headers */
+.section-container {
+  @apply px-0 w-full mx-auto text-center;
+}
+.section-header {
+  @apply text-4xl text-blue-darker mb-8 pt-8;
+}
+.section-header-alternate {
+  @apply text-4xl text-white mb-8 pt-8;
+}
+.section-subheader {
+  @apply text-3xl text-blue-darker mb-8;
+}
+.section-content {
+  @apply px-8;
+}
+/* sections */
+.home {
+  @apply pb-8;
+}
+.header {
+  @apply text-4xl text-center text-white mt-12 mb-8;
+}
+.home-list {
+  @apply list-reset text-center;
+}
+.home-list-item {
+  @apply text-2xl text-white py-2;
+}
+.home-container {
+  @apply h-80vh flex items-center flex-col;
+}
+.publications {
+  @apply pb-8;
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+}
+.impact {
+  @apply pb-8;
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+}
+.about, .contact {
+  @apply pb-8 bg-grey-lightest;
+}
+.interaction {
+  @apply pb-8 bg-grey-lightest;
+}
+/* containers */
+.card {
+  @apply px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm bg-white;
+}
+.card-alternate {
+  @apply mb-8;
+}
+.card-header {
+  @apply leading-tight mb-4;
+}
+.card-header-alternate {
+  @apply leading-tight;
+}
+.card-container {
+  @apply flex flex-col w-full mb-4;
+}
+.card-text {
+  @apply mb-4;
+}
+.carousel {
+  @apply mt-8 mb-12;
+  height: 500px;
+}
+.comment-items {
+  @apply px-6 py-4 shadow-lg text-center my-4 border-t-4 border-blue-darkest rounded-sm bg-white;
+}
+.contact-icon {
+  @apply text-2xl align-middle mr-4;
+}
+@screen sm {
+  .carousel {
+  height: 400px;
+}
+}
+@screen md {
+  .header {
+    @apply text-5xl mt-0;
+  }
+  .section-header {
+    @apply text-5xl;
+  }
+  .section-header-alternate {
+    @apply text-5xl;
+  }
+  .section-container {
+    @apply px-8 w-3/4;
+  }
+  .section-content {
+  @apply px-0;
+}
+  .home-list-item {
+    @apply py-0 px-8;
+  }
+  .home-list {
+    @apply flex mb-16;
+  }
+  .home-container {
+    @apply justify-center;
+  }
+  .section-subheader {
+  @apply text-4xl;
+}
+  .comment-items {
+    @apply mx-8;
+  }
+}
 
+@screen lg {
+  .nav-btn {
+    @apply hidden;
+  }
+  .nav-menu {
+    @apply block flex justify-between items-center w-auto flex-grow;
+  }
+  .section-container {
+    @apply w-1/2;
+  }
+}
