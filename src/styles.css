@@ -56,6 +56,7 @@ p {
 .nav-menu {
   @apply hidden w-full text-blue-darkest;
 }
+
 /* headers */
 .section-container {
   @apply px-0 w-full mx-auto text-center;
