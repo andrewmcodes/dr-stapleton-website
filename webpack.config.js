@@ -25,9 +25,5 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('styles.css'),
-     new PurifyCSSPlugin({
-      // Give paths to parse for rules. These should be absolute!
-      paths: glob.sync(path.join(__dirname, './*.html')),
-    })
   ]
 }

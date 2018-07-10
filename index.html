@@ -35,7 +35,7 @@
 <body>
   <nav class="w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 font-sans fixed shadow-lg border-t-4 border-blue-darkest">
     <div class="flex items-center flex-no-shrink text-blue-darkest mr-6">
-      <span class="font-semibold text-xl">Dr. Ann E. Stapleton</span>
+      <a href="#home" class=" no-underline text-blue-darkest font-semibold text-xl">Dr. Ann E. Stapleton</a>
     </div>
     <div class="block text-blue-darkest lg:hidden">
       <button class="flex items-center px-3 py-2 rounded text-white bg-blue-darkest hover:shadow-lg" id="js-nav-menu-button">
@@ -48,9 +48,6 @@
     <div class="hidden w-full lg:block lg:flex lg:items-center lg:w-auto text-blue-darkest" id="js-nav-menu">
       <div class="flex items-center justify-center">
         <div class="text-sm lg:flex-grow text-center">
-          <a href="#home" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
-            Home
-          </a>
           <a href="#about" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
             About
           </a>
@@ -63,9 +60,10 @@
           <a href="#impact" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
             Impact
           </a>
+          <a href="#dev-experiences" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">About the Developers</a>
         </div>
       </div>
-      <div class="flex items-center justify-center lg:content-end text-center fuck">
+      <div class="flex items-center justify-center lg:content-end text-center">
         <a href="#contact" class="btn mt-4 lg:mt-0">Contact</a>
       </div>
     </div>
@@ -234,6 +232,17 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="dev-experiences" id="dev-experiences">
+      <div class="section-container">
+        <h1 class="section-header">
+          About the Developers
+        </h1>
+        <p class="section-content">
+          This site was built by Onshore Studios, a website creation and design company run by two UNCW graduates.  We used the skills gained from our time at UNCW to start a website building and design business. Ethan, our administrator, graduated with an accounting degree from the Cameron school of business.  His knowledge of keeping financial records and managing clients and work orders is what keeps our business running smoothly, legally, and efficiently.  Andrew, our developer, graduated with a degree in Computer Science.  His coding and design ability is what creates our elegant sites and maintains high quality products for our customers. Andrew has experience in many programming languages, but primarily works as a Ruby on Rails devloper for N2 Publishing. This shows you should not take the lessons you learn at UNCW for granted because one day you could be running your own business as well.
+        </p>
+        <a href="#" class="btn">Visit our site</a>
       </div>
     </section>
     <section id="contact" class="contact">
