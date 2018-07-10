@@ -96,10 +96,16 @@ p {
 .impact {
   @apply pb-8 bg-white;
 }
-.about, .contact {
+.about{
   @apply pb-8 bg-grey-lightest;
 }
+.contact {
+  @apply pb-8 bg-white;
+}
 .interaction {
+  @apply pb-8 bg-grey-lightest;
+}
+.dev-experiences {
   @apply pb-8 bg-grey-lightest;
 }
 /* containers */
