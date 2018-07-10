@@ -48,19 +48,19 @@
     <div class="hidden w-full lg:block lg:flex lg:items-center lg:w-auto text-blue-darkest" id="js-nav-menu">
       <div class="flex items-center justify-center">
         <div class="text-sm lg:flex-grow text-center">
-          <a href="#home" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
+          <a href="#home" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
             Home
           </a>
-          <a href="#about" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
+          <a href="#about" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
             About
           </a>
-          <a href="#publications" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
+          <a href="#publications" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
             Publications &amp; Projects
           </a>
-          <a href="#interaction" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
+          <a href="#interaction" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
             Interaction
           </a>
-          <a href="#impact" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
+          <a href="#impact" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
             Impact
           </a>
         </div>
@@ -70,201 +70,203 @@
       </div>
     </div>
   </nav>
-  <section id="home" class="home">
-    <div class="home-container relative">
-      <h1 class="header">Dr. Ann E. Stapleton</h1>
-      <ul class="home-list">
-        <li class="home-list-item ">Researcher</li>
-        <li class="home-list-item ">Innovator</li>
-        <li class="home-list-item ">Mentor</li>
-      </ul>
-      <a href="#about" class="arrow-down">
-      <ion-icon class="arrow-icon" name="arrow-down"></ion-icon>
-      </a>
-    </div>
-  </section>
-  <section id="about" class="about">
-    <div class="section-container">
-      <div class="bg-cover mx-auto pt-8">
+  <div class="js-menu-dismiss">
+    <section id="home" class="home">
+      <div class="home-container relative">
+        <h1 class="header">Dr. Ann E. Stapleton</h1>
+        <ul class="home-list">
+          <li class="home-list-item ">Researcher</li>
+          <li class="home-list-item ">Innovator</li>
+          <li class="home-list-item ">Mentor</li>
+        </ul>
+        <a href="#about" class="arrow-down">
+        <ion-icon class="arrow-icon" name="arrow-down"></ion-icon>
+        </a>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="section-container">
+        <div class="bg-cover mx-auto pt-8">
 
-      <img class="rounded-full" src="./src/img/profile-picture.png" alt="" height="300px">
+        <img class="rounded-full" src="./src/img/profile-picture.png" alt="" height="300px">
+        </div>
+        <h1 class="section-header">About</h1>
+        <p class="section-content">Dr. Ann E. Stapleton’s research is focused on experimental testing of genotype-environment-phenotype models and systems
+          modeling and she has more than ten years experience in development of cyberinfrastructure for biology. She has published
+          in computer science, statistics, and biology journals. She was elected the Chair of the 2017 Gordon Research Conference
+          on Quantitative Genetics and Genomics and recently served as the faculty lead to develop and approve a new interdisciplinary
+          professional science master’s program in data science.</p>
+          <a href="systems_seminar2018_Stapleton_materials.pdf" class="btn" target="_blank">See My CV</a>
       </div>
-      <h1 class="section-header">About</h1>
-      <p class="section-content">Dr. Ann E. Stapleton’s research is focused on experimental testing of genotype-environment-phenotype models and systems
-        modeling and she has more than ten years experience in development of cyberinfrastructure for biology. She has published
-        in computer science, statistics, and biology journals. She was elected the Chair of the 2017 Gordon Research Conference
-        on Quantitative Genetics and Genomics and recently served as the faculty lead to develop and approve a new interdisciplinary
-        professional science master’s program in data science.</p>
-        <a href="systems_seminar2018_Stapleton_materials.pdf" class="btn" target="_blank">See My CV</a>
-    </div>
-  </section>
-  <section id="publications" class="publications">
-    <div class="section-container">
-      <h1 class="section-header">Publications &amp; Projects</h1>
-      <div class="flex flex-col w-full">
-        <div class="card">
-          <div class="mb-4">
-            <h2 class="card-header-alternate">Publications</h2>
-            <p class="card-text">You can find all of my publications by clicking the button below</p>
-            <a href="https://scholar.google.com/citations?hl=en&user=MfwDLb0AAAAJ&sortby=pubdate&view_op=list_works" class="btn">See More</a>
+    </section>
+    <section id="publications" class="publications">
+      <div class="section-container">
+        <h1 class="section-header">Publications &amp; Projects</h1>
+        <div class="flex flex-col w-full">
+          <div class="card">
+            <div class="mb-4">
+              <h2 class="card-header-alternate">Publications</h2>
+              <p class="card-text">You can find all of my publications by clicking the button below</p>
+              <a href="https://scholar.google.com/citations?hl=en&user=MfwDLb0AAAAJ&sortby=pubdate&view_op=list_works" class="btn">See More</a>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="mb-4">
-            <h2 class="card-header-alternate">EnviroTyping</h2>
-            <p class="card-text">Genetically-Informed EnviroTyping Tools to Better Test and Target Environments</p>
-            <a href="http://envirotyping.readthedocs.io/en/master/" class="btn">See More</a>
+          <div class="card">
+            <div class="mb-4">
+              <h2 class="card-header-alternate">EnviroTyping</h2>
+              <p class="card-text">Genetically-Informed EnviroTyping Tools to Better Test and Target Environments</p>
+              <a href="http://envirotyping.readthedocs.io/en/master/" class="btn">See More</a>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="mb-4">
-            <h2 class="card-header-alternate">Validate 1.0</h2>
-            <p class="card-text">Test predictions, integrate applications, and manage GWAS and prediction applications in parallel</p>
-            <a href="https://na01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fvalidate-10.readthedocs.io%2Fen%2Flatest%2F&data=01%7C01%7Cstapletona%40uncw.edu%7C5b1002d2e8b34526ffcf08d5cb295f5e%7C2213678197534c75af2868a078871ebf%7C1&sdata=e7bspsMH9plJGgGbaarct0Zcz9FRwMQboOeFk0lBf2A%3D&reserved=0" class="btn">See More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="interaction" class="interaction">
-    <div class="section-container">
-      <h1 class="section-header">Interaction</h1>
-      <p class="section-content">More than 50 research students have been supported by my federal grants in the last five years, and I encourage networking
-        among my students and with many other students and colleagues. My research students have gone on to successful careers
-        in fields ranging from plant breeding informatics to biostatistics to high-school science teaching. Career mentoring
-        and training in project management is a key part of my student mentoring strategy.</p>
-      <div class="carousel">
-        <h2 class="section-header">Student Comments</h2>
-        <div class="comment-items mySlides">
-          <div class="lg:mb-4">
-            <p>
-              I’m in the middle of the 2nd year in the Immunobiology PhD program at University of Arizona- and I am absolutely loving it!
-              I remind myself quite often how lucky I am to have the opportunity to further my education here and I know
-              I wouldn’t be here if it wasn’t for you. I really appreciate you allowing me to work in your lab and providing
-              me with guidance when I applied for school. I just wanted to touch base with you and say thanks for being a
-              great mentor and taking the time to help us confused students!
-            </p>
-          </div>
-        </div>
-        <div class="comment-items mySlides">
-          <div class="lg:mb-4">
-            <p>
-              Being a new college student, I don’t think I was ready for the challenge of honors biology. It was a daunting challenge,
-              but I know now that it really prepared me for my future classes. I’m taking a genetics class this semester,
-              and I think it’s because of taking Honors Bio 201 that I am having an easier time than some of my other classmates.
-              I just wanted to thank you for challenging me and preparing me for future classes because I don’t think I appreciated
-              it at this time a year and a half ago.
-            </p>
-          </div>
-        </div>
-        <div class="comment-items mySlides">
-          <div class="lg:mb-4">
-            <p>
-              As my undergrad experience comes to an end I wanted to that you for all the initial effort you put into my education. From
-              the thought provoking Honors Bio201 class to helping my find a lab that conducted research I liked, and everything
-              in between…I really appreciated it.
-            </p>
-          </div>
-        </div>
-        <div class="comment-items mySlides">
-          <div class="lg:mb-4">
-            <p>
-              Thank you so much for serving on my honors committee, but even more, thank you for your constant guidance throughout my undergraduate
-              career. I can honestly say that I would not be where I am without your expertise and kindness. Thank you for
-              believing in me when I didn’t believe in me. Thank you for pushing us all to the limit in “Bio Bootcamp”. Thank
-              you for never being too busy to help or talk. I feel truly honored to have had the opportunity to learn from
-              you.
-            </p>
-          </div>
-        </div>
-        <div class="comment-items mySlides">
-          <div class="lg:mb-4">
-            <p>
-              You supported and guided me in my college career. You were my first biology professor. Your class was hard, but it prepared
-              me for more difficult courses down the road. You were on my Honors project committee, and your advice was invaluable.
-            </p>
-          </div>
-        </div>
-        <div class="comment-items mySlides">
-          <div class="lg:mb-4">
-            <p>
-              I wanted to take a second to thank you from the bottom of my heart for the opportunity to be your student and work in your
-              lab. I have grown immeasurably as a student and scientist during my time with you and have gained so many skills
-              that I know I can take with me into the professional world and into graduate school. You have been a great
-              mentor to me. Thank you again for all that you've done for me!
-            </p>
+          <div class="card">
+            <div class="mb-4">
+              <h2 class="card-header-alternate">Validate 1.0</h2>
+              <p class="card-text">Test predictions, integrate applications, and manage GWAS and prediction applications in parallel</p>
+              <a href="https://na01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fvalidate-10.readthedocs.io%2Fen%2Flatest%2F&data=01%7C01%7Cstapletona%40uncw.edu%7C5b1002d2e8b34526ffcf08d5cb295f5e%7C2213678197534c75af2868a078871ebf%7C1&sdata=e7bspsMH9plJGgGbaarct0Zcz9FRwMQboOeFk0lBf2A%3D&reserved=0" class="btn">See More</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="impact" class="impact">
-    <div class="section-container">
-      <h1 class="section-header">Impact</h1>
-      <div class="card-container">
-        <div class="card">
-          <div class="mb-4">
-            <h2 class="card-header">2016 Science Olympiad Outstanding Volunteer Award</h2>
-            <a href="http://uncw.edu/cestem/ncso.html" title="2016 Science Olympiad Outstanding Volunteer Award" class="btn" target="_blank">See More</a>
+    </section>
+    <section id="interaction" class="interaction">
+      <div class="section-container">
+        <h1 class="section-header">Interaction</h1>
+        <p class="section-content">More than 50 research students have been supported by my federal grants in the last five years, and I encourage networking
+          among my students and with many other students and colleagues. My research students have gone on to successful careers
+          in fields ranging from plant breeding informatics to biostatistics to high-school science teaching. Career mentoring
+          and training in project management is a key part of my student mentoring strategy.</p>
+        <div class="carousel">
+          <h2 class="section-header">Student Comments</h2>
+          <div class="comment-items mySlides">
+            <div class="lg:mb-4">
+              <p>
+                I’m in the middle of the 2nd year in the Immunobiology PhD program at University of Arizona- and I am absolutely loving it!
+                I remind myself quite often how lucky I am to have the opportunity to further my education here and I know
+                I wouldn’t be here if it wasn’t for you. I really appreciate you allowing me to work in your lab and providing
+                me with guidance when I applied for school. I just wanted to touch base with you and say thanks for being a
+                great mentor and taking the time to help us confused students!
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="mb-4">
-            <h2 class="card-header">Published with Statistician and Computer Science Collaborators</h2>
-            <a href="https://scholar.google.com/citations?hl=en&user=MfwDLb0AAAAJ&sortby=pubdate&view_op=list_works" title="Dr. Ann E. Stapleton Google Scholar Profile" class="btn" target="_blank">See More</a>
+          <div class="comment-items mySlides">
+            <div class="lg:mb-4">
+              <p>
+                Being a new college student, I don’t think I was ready for the challenge of honors biology. It was a daunting challenge,
+                but I know now that it really prepared me for my future classes. I’m taking a genetics class this semester,
+                and I think it’s because of taking Honors Bio 201 that I am having an easier time than some of my other classmates.
+                I just wanted to thank you for challenging me and preparing me for future classes because I don’t think I appreciated
+                it at this time a year and a half ago.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="mb-4">
-            <h2 class="card-header">UNCW Mentor Award</h2>
-            <a href="http://uncw.edu/honors/meetfaculty.html" title="UNCW Honors Faculty Mentor Awards" class="btn" target="_blank">See More</a>
+          <div class="comment-items mySlides">
+            <div class="lg:mb-4">
+              <p>
+                As my undergrad experience comes to an end I wanted to that you for all the initial effort you put into my education. From
+                the thought provoking Honors Bio201 class to helping my find a lab that conducted research I liked, and everything
+                in between…I really appreciated it.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="mb-4">
-            <h2 class="card-header">Chair of Gordon Research Conference on Quantitative Genetics</h2>
-            <a href="https://www.grc.org/programs.aspx?id=12073" title="Chair of Gordon Research Conference on Quantitative Genetics" class="btn" target="_blank">See More</a>
+          <div class="comment-items mySlides">
+            <div class="lg:mb-4">
+              <p>
+                Thank you so much for serving on my honors committee, but even more, thank you for your constant guidance throughout my undergraduate
+                career. I can honestly say that I would not be where I am without your expertise and kindness. Thank you for
+                believing in me when I didn’t believe in me. Thank you for pushing us all to the limit in “Bio Bootcamp”. Thank
+                you for never being too busy to help or talk. I feel truly honored to have had the opportunity to learn from
+                you.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="mb-4">
-            <h2 class="card-header">Faculty Lead for Development and Approval of UNCW Data Science Graduate Program</h2>
-            <a href="http://uncw.edu/datascience/" title="UNCW Data Science" class="btn" target="_blank">See More</a>
+          <div class="comment-items mySlides">
+            <div class="lg:mb-4">
+              <p>
+                You supported and guided me in my college career. You were my first biology professor. Your class was hard, but it prepared
+                me for more difficult courses down the road. You were on my Honors project committee, and your advice was invaluable.
+              </p>
+            </div>
+          </div>
+          <div class="comment-items mySlides">
+            <div class="lg:mb-4">
+              <p>
+                I wanted to take a second to thank you from the bottom of my heart for the opportunity to be your student and work in your
+                lab. I have grown immeasurably as a student and scientist during my time with you and have gained so many skills
+                that I know I can take with me into the professional world and into graduate school. You have been a great
+                mentor to me. Thank you again for all that you've done for me!
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="contact" class="contact">
-    <div class="section-container">
-      <h1 class="section-header">Contact</h1>
-      <div class="card-container">
-        <div class="card-alternate">
+    </section>
+    <section id="impact" class="impact">
+      <div class="section-container">
+        <h1 class="section-header">Impact</h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="mb-4">
+              <h2 class="card-header">2016 Science Olympiad Outstanding Volunteer Award</h2>
+              <a href="http://uncw.edu/cestem/ncso.html" title="2016 Science Olympiad Outstanding Volunteer Award" class="btn" target="_blank">See More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mb-4">
+              <h2 class="card-header">Published with Statistician and Computer Science Collaborators</h2>
+              <a href="https://scholar.google.com/citations?hl=en&user=MfwDLb0AAAAJ&sortby=pubdate&view_op=list_works" title="Dr. Ann E. Stapleton Google Scholar Profile" class="btn" target="_blank">See More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mb-4">
+              <h2 class="card-header">UNCW Mentor Award</h2>
+              <a href="http://uncw.edu/honors/meetfaculty.html" title="UNCW Honors Faculty Mentor Awards" class="btn" target="_blank">See More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mb-4">
+              <h2 class="card-header">Chair of Gordon Research Conference on Quantitative Genetics</h2>
+              <a href="https://www.grc.org/programs.aspx?id=12073" title="Chair of Gordon Research Conference on Quantitative Genetics" class="btn" target="_blank">See More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mb-4">
+              <h2 class="card-header">Faculty Lead for Development and Approval of UNCW Data Science Graduate Program</h2>
+              <a href="http://uncw.edu/datascience/" title="UNCW Data Science" class="btn" target="_blank">See More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="section-container">
+        <h1 class="section-header">Contact</h1>
+        <div class="card-container">
+          <div class="card-alternate">
 
-          <a href="mailto:stapletona@uncw.edu" class="contact-link"><ion-icon class="contact-icon" name="mail"></ion-icon>
-          stapletona@uncw.edu</a>
-        </div>
-        <div class="card-alternate">
-          <a href="https://www.linkedin.com/in/ann-stapleton-4473717/" class="contact-link">
-          <ion-icon class="contact-icon" name="logo-linkedin"></ion-icon>
-          Ann Stapleton
-          </a>
-        </div>
-        <div class="card-alternate">
-          <a href="tel:1-910-962-7267" class="contact-link">
-          <ion-icon class="contact-icon" name="call"></ion-icon>
-          (910) 962-7267
-          </a>
-        </div>
-        <div class="card-alternate">
-          <a href="http://www.uncw.edu/bio/about-faculty.html" class="contact-link">
-          <ion-icon class="contact-icon" name="pin"></ion-icon>
-          Friday Hall 2062
-          </a>
+            <a href="mailto:stapletona@uncw.edu" class="contact-link"><ion-icon class="contact-icon" name="mail"></ion-icon>
+            stapletona@uncw.edu</a>
+          </div>
+          <div class="card-alternate">
+            <a href="https://www.linkedin.com/in/ann-stapleton-4473717/" class="contact-link">
+            <ion-icon class="contact-icon" name="logo-linkedin"></ion-icon>
+            Ann Stapleton
+            </a>
+          </div>
+          <div class="card-alternate">
+            <a href="tel:1-910-962-7267" class="contact-link">
+            <ion-icon class="contact-icon" name="call"></ion-icon>
+            (910) 962-7267
+            </a>
+          </div>
+          <div class="card-alternate">
+            <a href="http://www.uncw.edu/bio/about-faculty.html" class="contact-link">
+            <ion-icon class="contact-icon" name="pin"></ion-icon>
+            Friday Hall 2062
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <footer>
     <div class="footer-container">
       <p class="footer-text">© 2018 Ann E. Stapleton</p>
