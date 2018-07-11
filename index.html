@@ -30,12 +30,14 @@
   ga('send', 'pageview');
 
 </script>
+<script src="./dist/js/scroll-offset.js"></script>
+
 </head>
 
-<body>
+<body onload="load()">
   <nav class="w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 font-sans fixed shadow-lg border-t-4 border-blue-darkest">
     <div class="flex items-center flex-no-shrink text-blue-darkest mr-6">
-      <a href="#home" class=" no-underline text-blue-darkest font-semibold text-xl">Dr. Ann E. Stapleton</a>
+      <a data-scroll href="#home" class=" no-underline text-blue-darkest font-semibold text-xl">Dr. Ann E. Stapleton</a>
     </div>
     <div class="block text-blue-darkest lg:hidden">
       <button class="flex items-center px-3 py-2 rounded text-white bg-blue-darkest hover:shadow-lg" id="js-nav-menu-button">
@@ -48,27 +50,27 @@
     <div class="hidden w-full lg:block lg:flex lg:items-center lg:w-auto text-blue-darkest" id="js-nav-menu">
       <div class="flex items-center justify-center">
         <div class="text-sm lg:flex-grow text-center">
-          <a href="#about" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
+          <a data-scroll href="#about" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
             About
           </a>
-          <a href="#publications" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
+          <a data-scroll href="#publications" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
             Publications &amp; Projects
           </a>
-          <a href="#interaction" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
+          <a data-scroll href="#interaction" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
             Interaction
           </a>
-          <a href="#impact" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
+          <a data-scroll href="#impact" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">
             Impact
           </a>
-          <a href="#dev-experiences" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">About the Developers</a>
+          <a data-scroll href="#dev-experiences" class="js-menu-dismiss no-underline block mt-4 lg:inline-block lg:mt-0 text-blue-darkest md:mr-8 font-semibold border-b-2 border-white lg:hover:border-blue-darkest underline-transition nav-link">About the Developers</a>
         </div>
       </div>
       <div class="flex items-center justify-center lg:content-end text-center">
-        <a href="#contact" class="btn mt-4 lg:mt-0">Contact</a>
+        <a data-scroll href="#contact" class="btn mt-4 lg:mt-0">Contact</a>
       </div>
     </div>
   </nav>
-  <div class="js-menu-dismiss">
+  <div class="js-menu-dismiss z-10">
     <section id="home" class="home">
       <div class="home-container relative">
         <h1 class="header">Dr. Ann E. Stapleton</h1>
@@ -86,7 +88,7 @@
       <div class="section-container">
         <div class="bg-cover mx-auto pt-8">
 
-        <img class="rounded-full" src="./src/img/profile-picture.png" alt="Ann Stapleton Profile Image" height="300px">
+        <img class="rounded-full" src="./dist/img/profile-picture.png" alt="Ann Stapleton Profile Image" height="300px">
         </div>
         <h1 class="section-header">About</h1>
         <p class="section-content">Dr. Ann E. Stapleton’s research is focused on experimental testing of genotype-environment-phenotype models and systems
@@ -282,7 +284,8 @@
       <p class="footer-text">Designed and developed by Onshore Studios</p>
     </div>
   </footer>
-  <script src="./src/main.js"></script>
+  <script src="./dist/js/nav.js"></script>
+  <script src="./dist/js/carousel.js"></script>
 </body>
 
 </html>
