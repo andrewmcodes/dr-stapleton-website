@@ -143,6 +143,9 @@ p {
 .footer-text {
   @apply text-xs text-white font-sans mb-2;
 }
+.footer-link {
+  @apply text-sm text-white font-sans mb-2;
+}
 .contact-link {
   @apply no-underline text-blue-darkest;
 }

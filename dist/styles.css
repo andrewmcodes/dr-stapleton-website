@@ -881,6 +881,13 @@ p {
   margin-bottom: .5rem;
 }
 
+.footer-link {
+  font-size: .875rem;
+  color: #fff;
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin-bottom: .5rem;
+}
+
 .contact-link {
   text-decoration: none;
   color: #12283a;
