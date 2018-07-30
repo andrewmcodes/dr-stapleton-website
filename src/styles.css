@@ -27,21 +27,18 @@ p {
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
-@keyframes ArrowDown {
+@keyframes ArrowIcon {
   0%, 100% {
-    bottom: 25px;
+    bottom: 10px;
   }
   50% {
-    bottom: 50px;
+    bottom: 20px;
   }
 }
-.arrow-down {
-    animation: ArrowDown 4s linear infinite;
-    position: absolute;
-    @apply text-white;
-}
 .arrow-icon {
-  @apply text-white text-4xl mt-16;
+    @apply text-white text-4xl mt-16 w-auto h-auto;
+    animation: ArrowIcon 4s linear infinite;
+    position: absolute;
 }
 /* Nav */
 .nav {
@@ -155,6 +152,14 @@ p {
 }
 }
 @screen md {
+  @keyframes ArrowIcon {
+    0%, 100% {
+      bottom: 25px;
+    }
+    50% {
+      bottom: 50px;
+    }
+  }
   .header {
     @apply text-5xl mt-0 pt-0;
   }

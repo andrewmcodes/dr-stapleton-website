@@ -1,6 +1,6 @@
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require("path");
 const glob = require("glob-all");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 
 /**

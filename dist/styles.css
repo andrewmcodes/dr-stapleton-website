@@ -375,16 +375,6 @@ ul {
 }
 
 /**
- * Suppress the focus outline on elements that cannot be accessed via keyboard.
- * This prevents an unwanted focus outline from appearing around elements that
- * might still respond to pointer events.
- */
-
-[tabindex="-1"]:focus {
-  outline: none !important;
-}
-
-/**
  * Tailwind custom reset styles
  */
 
@@ -441,6 +431,7 @@ button,
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -662,27 +653,25 @@ p {
   transition-duration: 200ms;
 }
 
-@keyframes ArrowDown {
+@keyframes ArrowIcon {
   0%,
   100% {
-    bottom: 25px;
+    bottom: 10px;
   }
 
   50% {
-    bottom: 50px;
+    bottom: 20px;
   }
-}
-
-.arrow-down {
-  animation: ArrowDown 4s linear infinite;
-  position: absolute;
-  color: #fff;
 }
 
 .arrow-icon {
   color: #fff;
   font-size: 2.25rem;
   margin-top: 4rem;
+  width: auto;
+  height: auto;
+  animation: ArrowIcon 4s linear infinite;
+  position: absolute;
 }
 
 /* Nav */
@@ -900,6 +889,17 @@ p {
 }
 
 @media (min-width: 768px) {
+  @keyframes ArrowIcon {
+    0%,
+    100% {
+      bottom: 25px;
+    }
+
+    50% {
+      bottom: 50px;
+    }
+  }
+
   .header {
     font-size: 3rem;
     margin-top: 0;
