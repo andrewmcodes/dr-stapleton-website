@@ -1,20 +1,22 @@
 # Ann Stapleton Personal Site
-Dr. Ann E. Stapleton's personal website. Designed and developed by Onshore Studios.
+
 ## **Getting Started**
 ---
 To get started, clone the project and install the dependencies:
 ```
-npm install
+yarn
 ```
 Then run the following command in your terminal:
 ```
-npm run watch
+yarn watch
 ```
 
 ### **Prerequisites**
+
 In order to install the node dependencies, you will need to install Node.js and NPM, or use Yarn.
 
 #### **Homebrew**
+
 First, install Homebrew
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -32,14 +34,15 @@ Next, add Homebrew's location to your $PATH in your `.bash_profile` or `.zshrc` 
 export PATH="/usr/local/bin:$PATH"
 ```
 
-#### **NPM**
-Install Node.js (NPM will be installed with Node):
+#### **Yarn**
+
+Install Node.js & [Yarn](https://yarnpkg.com/en/docs/install#mac-stable):
 ```
-brew install node
+brew install node yarn
 ```
 To make sure everything downloaded correctly, run the following command
 ```
-npm -v
+yarn -v
 ```
 If all went well, you should get a version number like `6.1.0`
 
@@ -65,13 +68,13 @@ This website heavily relies on the following technologies:
 
 ## **Tailwind CSS**
 ---
-This project is built primarly with Tailwind CSS. Tailwind is a utility-first CSS framework for rapidly building custom user interfaces. Tailwind provides highly composable, low-level utility classes that make it easy to build complex user interfaces without encouraging any two sites to look the same. Tailwind provides tools for extracting component classes from repeated utility patterns, making it easy to update multiple instances of a component from one place. Tailwind is written in PostCSS and configured in JavaScript, which means you have the full power of a real programming language at your fingertips.
+This project is built primarily with Tailwind CSS. Tailwind is a utility-first CSS framework for rapidly building custom user interfaces. Tailwind provides highly composable, low-level utility classes that make it easy to build complex user interfaces without encouraging any two sites to look the same. Tailwind provides tools for extracting component classes from repeated utility patterns, making it easy to update multiple instances of a component from one place. Tailwind is written in PostCSS and configured in JavaScript, which means you have the full power of a real programming language at your fingertips.
 
 By using this framework, we are able to extract our CSS into components for easy editing. When you run the `npm run watch` command, Tailwind transform their Javascript utilities into CSS, along with any other custom CSS, into the `./dist/styles.css` file, which is what the site looks for to grep styles. All changes should be made in the `./src/styles.css` file and by running `npm run watch` or `npm run dev`, these changes will be put in your `./dist/styles.css` folder, and ready to go live.
 
 ### **Why TailwindCSS?**
 
-Tailwind CSS is a way to stay consistent and build design systems. Component extraction is currently a widely used trend and forces consistently throughout the website. If you would like to update a style, it will persit throughout the application, making editing very easy.
+Tailwind CSS is a way to stay consistent and build design systems. Component extraction is currently a widely used trend and forces consistently throughout the website. If you would like to update a style, it will persist throughout the application, making editing very easy.
 
 ## **Adding to your UCNW People Server**
 ---
@@ -88,13 +91,16 @@ If you would like to change out an asset, there are two steps:
 2. Unless the asset has the **exact** name of the old asset, you will have to update the reference. Simply search the HTML for the name of your asset (e.g. my-cv.pdf) and replace with the name of your new asset. Unless you move the asset, which there is no reason to do, you just have to change the file name.
 
 ### **Content**
+
 Changing content is pretty simple and should not break any of the styling due to the component based style implemented. Simply find the content in the HTML, delete it, and paste in your new content.
 
 ### **Links**
+
 A link element looks like the following:
 ```
 <a href="http://uncw.edu/cestem/ncso.html" title="2016 Science Olympiad Outstanding Volunteer Award" class="btn" target="_blank">See More</a>
 ```
+
 1. Href refers to the actual link. Simply delete what is within the quotes, and put in your new link.
 2. Title is for accessibility reasons. Simply delete the current title and replace with what you want it to be.
 3. Class refers to the CSS component. All links on this site use the class `btn`
