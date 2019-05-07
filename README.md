@@ -1,104 +1,143 @@
-# Ann Stapleton Personal Site
+# Dr. Ann E. Stapleton's Personal Site
+
 Dr. Ann E. Stapleton's personal website. Designed and developed by Onshore Studios.
-## **Getting Started**
----
-To get started, clone the project and install the dependencies:
-```
-npm install
-```
-Then run the following command in your terminal:
-```
-npm run watch
+
+- [Dr. Ann E. Stapleton's Personal Site](#dr-ann-e-stapletons-personal-site)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+      - [git](#git)
+      - [Node.js](#nodejs)
+      - [NPM](#npm)
+      - [Gatsby CLI](#gatsby-cli)
+  - [Resources](#resources)
+    - [Recommended Development Tools](#recommended-development-tools)
+    - [Documentation](#documentation)
+  - [Making Changes](#making-changes)
+    - [Format and lint](#format-and-lint)
+    - [Build your site](#build-your-site)
+    - [Deploy](#deploy)
+    - [Updating Assets](#updating-assets)
+    - [Updating Content](#updating-content)
+    - [Styles](#styles)
+      - [TailwindCSS](#tailwindcss)
+      - [Custom CSS](#custom-css)
+
+## Getting Started
+
+Getting started is easy, assuming you have the relevant dependencies. Clone the project and install the dependencies:
+
+```sh
+git clone https://github.com/andrewmcodes/dr-stapleton-website
+cd dr-stapleton-website
+npm run develop
 ```
 
-### **Prerequisites**
-In order to install the node dependencies, you will need to install Node.js and NPM, or use Yarn.
+The project should now be running on [localhost:8000](http://localhost:8000/).
 
-#### **Homebrew**
-First, install Homebrew
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+### Prerequisites
+
+In order to contribute to this project, you will need to make sure you have the following:
+
+- git
+- Node.js
+- NPM (or Yarn)
+- Gatsby CLI
+
+#### git
+
+Most non-Windows operating systems have git installed by default. Follow the [official documentation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if you have any trouble.
+
+To make sure everything downloaded correctly, run the following command:
+
+```sh
+git --version
 ```
 
-Then run `brew update` to make sure Homebrew is up to date
+If all went well, you should get a version number like `git version 2.21.0`
 
-```
-brew update
+#### Node.js
+
+- [Official download](https://nodejs.org/en/download/)
+- [Via package manager](https://nodejs.org/en/download/package-manager/)
+
+To make sure everything downloaded correctly, run the following command:
+
+```sh
+node -v
 ```
 
-Next, add Homebrew's location to your $PATH in your `.bash_profile` or `.zshrc` file.
+If all went well, you should get a version number like `v11.12.0`
 
-```
-export PATH="/usr/local/bin:$PATH"
-```
+#### NPM
 
-#### **NPM**
-Install Node.js (NPM will be installed with Node):
-```
-brew install node
-```
-To make sure everything downloaded correctly, run the following command
-```
+NPM is automatically installed with Node.js.
+
+To make sure everything downloaded correctly, run the following command:
+
+```sh
 npm -v
 ```
-If all went well, you should get a version number like `6.1.0`
 
-## **Tools and Technologies**
----
+If all went well, you should get a version number like `6.9.0`
 
-### **Tools**
-Recommended development tool is [VS Code](https://code.visualstudio.com/). You can use a different editor, but VS Code has a nice variety of plugins like [Live Reload](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) which make development much easier.
+#### Gatsby CLI
 
-You will also need a good terminal. If you you use VS Code, there is one built in. If not, I recommend [Archipelago](https://github.com/npezza93/archipelago) or [iTerm2](https://www.iterm2.com/). I would also suggest using ZSH over Bash. Read more [here](https://github.com/robbyrussell/oh-my-zsh)
+Install Gatsby CLI with the following command:
 
-You will also need to ensure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed on your computer. Simply execute the following command to get the project
-```
-git clone https://github.com/andrewmcodes/dr-stapleton-website.git
+```sh
+npm install -g gatsby-cli
 ```
 
-### **Technologies**
+Check the [official documentation](https://www.gatsbyjs.org/docs/quick-start) for more information.
 
-This website heavily relies on the following technologies:
-1. [Webpack](https://webpack.js.org/)
-2. [PostCSS](https://github.com/postcss/postcss)
-3. [TailwindCSS](https://tailwindcss.com/)
+## Resources
 
-## **Tailwind CSS**
----
-This project is built primarly with Tailwind CSS. Tailwind is a utility-first CSS framework for rapidly building custom user interfaces. Tailwind provides highly composable, low-level utility classes that make it easy to build complex user interfaces without encouraging any two sites to look the same. Tailwind provides tools for extracting component classes from repeated utility patterns, making it easy to update multiple instances of a component from one place. Tailwind is written in PostCSS and configured in JavaScript, which means you have the full power of a real programming language at your fingertips.
+### Recommended Development Tools
 
-By using this framework, we are able to extract our CSS into components for easy editing. When you run the `npm run watch` command, Tailwind transform their Javascript utilities into CSS, along with any other custom CSS, into the `./dist/styles.css` file, which is what the site looks for to grep styles. All changes should be made in the `./src/styles.css` file and by running `npm run watch` or `npm run dev`, these changes will be put in your `./dist/styles.css` folder, and ready to go live.
+- [VS Code](https://code.visualstudio.com/)
+- [Archipelago](https://github.com/npezza93/archipelago)
 
-### **Why TailwindCSS?**
+### Documentation
 
-Tailwind CSS is a way to stay consistent and build design systems. Component extraction is currently a widely used trend and forces consistently throughout the website. If you would like to update a style, it will persit throughout the application, making editing very easy.
+- [Gatsby documentation](https://www.gatsbyjs.org/docs/)
+- [Tailwind documentation](https://tailwindcss.com/docs/what-is-tailwind/)
+- [Prettier documentation](https://prettier.io/docs/en/index.html)
+- [ESLint documentation](https://eslint.org/docs/user-guide/configuring)
 
-## **Adding to your UCNW People Server**
----
+## Making Changes
+
+### Format and lint
+
+- `npm run analyze` - See what ESLint and Prettier can fix
+- `npm run fix` - Run Prettier and ESLint with the `--fix` option
+
+### Build your site
+
+Use `npm run build` to build your site for production.
+
+### Deploy
+
 Please consult this [link](https://uncw.edu/ITSD/working/uploadwebfiles.html) for instructions on how to upload your site to the UNCW People Server.
 
-## **Making Changes**
----
-The complexity of making changes to this site will depend on what exactly you want to change.
-### **Assets**
+### Updating Assets
+
 Assets are typically referred to as external content that is loaded in to the site like pictures and documents.
 
 If you would like to change out an asset, there are two steps:
-1. Find the actual asset. These will all be located in `./dist/` folder. Simply delete the existing asset and copy in your new asset.
+
+1. Find the actual asset. These will all be located in `./src/` folder. Simply delete the existing asset and copy in your new asset.
 2. Unless the asset has the **exact** name of the old asset, you will have to update the reference. Simply search the HTML for the name of your asset (e.g. my-cv.pdf) and replace with the name of your new asset. Unless you move the asset, which there is no reason to do, you just have to change the file name.
 
-### **Content**
+### Updating Content
+
 Changing content is pretty simple and should not break any of the styling due to the component based style implemented. Simply find the content in the HTML, delete it, and paste in your new content.
 
-### **Links**
-A link element looks like the following:
-```
-<a href="http://uncw.edu/cestem/ncso.html" title="2016 Science Olympiad Outstanding Volunteer Award" class="btn" target="_blank">See More</a>
-```
-1. Href refers to the actual link. Simply delete what is within the quotes, and put in your new link.
-2. Title is for accessibility reasons. Simply delete the current title and replace with what you want it to be.
-3. Class refers to the CSS component. All links on this site use the class `btn`
-4. Target is used to specify that the link should open in a new tab/window rather than simply navigating you from where you are to where the link points to in the same window.
+### Styles
 
-### **Styles**
-Because of the component architecture of this site, changing the styling of one component will change that every instance of that component across the site. To change a component, navigate to `./src/styles.css`, find the class of the component you want to change, e.g. `.btn`, and update the styles. Refer to TailwindCSS's documentation for this.
+#### TailwindCSS
+
+Styling on this website is done via TailwindCSS base classes or custom CSS classes that extend the Tailwind classes. Refer to the [Tailwind documentation](https://tailwindcss.com/docs/what-is-tailwind/) for help.
+
+#### Custom CSS
+
+Because of the component architecture of this site, changing the styling of a custom CSS class will change every element that uses that class across the site. To change a class, navigate to `./src/css/styles.css`, find the class you want to change, e.g. `.btn`, and update the styles.
