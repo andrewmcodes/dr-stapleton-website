@@ -15,7 +15,7 @@ function IndexPage() {
     <Layout>
       <SEO
         title="Home"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`stapleton`, `uncw`, `publications`, `research`, `professor`, `mentor`, `researcher`, `innovator`, `students`]}
       />
       <Home />
       <About />
