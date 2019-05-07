@@ -5,204 +5,270 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
 
 body {
   @apply bg-blue-darkest font-sans leading-normal;
 }
+
 p {
   font-family: 'Crimson Text', serif;
 }
+
+.not-found {
+  margin-top: 80px;
+}
+
 /* buttons */
 .btn {
-  @apply no-underline text-xs font-semibold rounded px-4 py-2 leading-normal bg-blue-darkest text-white;
+  @apply no-underline text-sm font-semibold rounded px-8 py-3 leading-normal bg-blue-darkest text-white;
 }
+
 .btn:hover {
   @apply shadow-lg;
   transition-timing-function: linear;
   transition-duration: 200ms;
 }
+
 .transition {
   overflow-y: hidden;
-	transition-property: all;
-	transition-duration: .5s;
-	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
-@keyframes ArrowIcon {
-  0%, 100% {
-    bottom: 10px;
-  }
-  50% {
-    bottom: 20px;
-  }
-}
-.arrow-icon {
-    @apply text-white text-4xl mt-16 w-auto h-auto;
-    animation: ArrowIcon 4s linear infinite;
-    position: absolute;
-}
+
 /* Nav */
 .nav {
   @apply w-full flex items-center justify-between flex-wrap bg-white p-6 z-10 font-sans fixed shadow-lg border-t-4 border-blue-darkest;
 }
+
 .nav-brand {
   @apply flex items-center flex-no-shrink text-blue-darkest mr-6;
 }
+
 .nav-btn {
   @apply block text-blue-darkest;
 }
+
 .nav-menu {
   @apply hidden w-full text-blue-darkest;
+}
+
+.nav-link {
+  @apply block py-4 no-underline text-blue-darkest font-semibold border-b-2 border-white;
 }
 
 /* headers */
 .section-container {
   @apply px-0 w-full mx-auto text-center;
 }
+
 .section-header {
   @apply text-4xl text-blue-darker mb-8 pt-8;
 }
+
 .section-header-alternate {
   @apply text-4xl text-white mb-8 pt-8;
 }
+
 .section-subheader {
   @apply text-3xl text-blue-darker mb-8;
 }
+
 .section-content {
   @apply px-8 mb-8;
 }
+
 /* sections */
 .home {
   @apply pb-8;
-  background-image: linear-gradient(to top, #12283A 0%, #1c3d5a 100%);
+  background-image: linear-gradient(to top, #12283a 0%, #1c3d5a 100%);
 }
+
 .header {
   @apply text-4xl text-center text-white mt-12 mb-8 pt-16;
 }
+
 .home-list {
   @apply list-reset text-center;
 }
+
 .home-list-item {
   @apply text-2xl text-white py-2;
 }
+
 .home-container {
-  @apply h-screen flex items-center flex-col;
+  @apply flex items-center flex-col h-screen;
 }
+
 .publications {
   @apply pb-8 bg-white;
+  padding-top: 2.75rem;
 }
+
 .impact {
   @apply pb-8 bg-white;
+  padding-top: 2.75rem;
 }
-.about{
+
+.about {
   @apply pb-8 bg-grey-lightest;
+  padding-top: 2.75rem;
 }
+
 .contact {
   @apply pb-8 bg-white;
+  padding-top: 2.75rem;
 }
+
 .interaction {
   @apply pb-8 bg-grey-lightest;
+  padding-top: 2.75rem;
 }
+
 .dev-experiences {
   @apply pb-8 bg-grey-lightest;
+  padding-top: 2.75rem;
 }
+
 /* containers */
 .card {
-  @apply px-6 py-4 shadow-lg text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm bg-white;
+  @apply px-6 py-4 shadow-md text-center mx-8 my-4 border-t-4 border-blue-darkest rounded-sm bg-white;
 }
+
 .card-alternate {
   @apply mb-8;
 }
+
 .card-header {
-  @apply leading-tight mb-4;
+  @apply leading-tight text-blue-darkest;
 }
-.card-header-alternate {
-  @apply leading-tight;
+
+.impact .card-header {
+  @apply mb-6;
 }
+
 .card-container {
   @apply flex flex-col w-full mb-4;
 }
+
 .card-text {
-  @apply mb-4;
+  @apply mb-6 mt-2;
 }
+
 .carousel {
-  @apply mt-8 mb-12;
-  height: 500px;
+  @apply mt-8;
 }
+
+.carousel-body {
+  @apply mx-8 mb-8;
+}
+
 .comment-items {
-  @apply px-6 py-4 shadow-lg text-center my-4 border-t-4 border-blue-darkest rounded-sm bg-white;
+  @apply mx-1 px-6 py-4 shadow-md text-center my-4 border-t-4 border-blue-darkest rounded-sm bg-white;
 }
-.contact-icon {
-  @apply text-2xl align-top mr-4;
-}
+
 .footer-container {
   @apply px-0 py-8 w-full mx-auto text-center;
 }
+
 .footer-text {
   @apply text-xs text-white font-sans mb-2;
 }
+
 .footer-link {
   @apply text-sm text-white font-sans mb-2;
 }
+
 .contact-link {
-  @apply no-underline text-blue-darkest;
+  @apply no-underline text-blue-darkest flex flex-col justify-center items-center;
 }
-@screen sm {
-  .carousel {
-  height: 400px;
+
+.contact-link>svg {
+  @apply mb-2;
 }
-}
+
 @screen md {
-  @keyframes ArrowIcon {
-    0%, 100% {
-      bottom: 25px;
-    }
-    50% {
-      bottom: 50px;
-    }
+  .nav-link {
+    @apply inline-block mt-0 mr-8 py-0 shadow-none;
   }
+
   .header {
     @apply text-5xl mt-0 pt-0;
   }
+
   .section-header {
     @apply text-5xl;
   }
+
   .section-header-alternate {
     @apply text-5xl;
   }
+
   .section-container {
     @apply px-8 w-3/4;
   }
+
   .section-content {
-  @apply px-0;
-}
+    @apply px-0;
+  }
+
   .home-list-item {
     @apply py-0 px-8;
   }
+
   .home-list {
     @apply flex mb-16;
   }
+
   .home-container {
     @apply justify-center h-80vh;
   }
+
   .section-subheader {
     @apply text-4xl;
   }
+
   .comment-items {
     @apply mx-8;
   }
+
   .footer-text {
-  @apply text-base;
-}
+    @apply text-sm;
+  }
+
+  .contact .card-container {
+    @apply flex-row justify-between;
+  }
+
+  .card-alternate {
+    @apply flex-wrap;
+  }
+
+  .carousel-body {
+    @apply mx-8;
+  }
+
+  .footer-container {
+    @apply flex justify-between p-6;
+  }
 }
 
 @screen lg {
   .nav-btn {
     @apply hidden;
   }
+
   .nav-menu {
     @apply block flex justify-between items-center w-auto flex-grow;
   }
+
   .section-container {
     @apply w-1/2;
+  }
+
+  .contact .section-container {
+    @apply w-2/3;
   }
 }
