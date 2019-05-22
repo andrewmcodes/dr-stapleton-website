@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix:  `/stapletona/`,
   siteMetadata: {
     title: `Dr. Ann E. Stapleton`,
     description: `Researcher. Mentor. Innovator. Dr. Ann E. Stapleton's research is focused on experimental testing of genotype-environment-phenotype models and system modeling.`,
