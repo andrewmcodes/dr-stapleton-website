@@ -1,7 +1,7 @@
 {
   "name": "dr-stapleton-website",
   "description": "Researcher. Mentor. Innovator. Dr. Ann E. Stapleton's research is focused on experimental testing of genotype-environment-phenotype models and system modeling.",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "author": "Andrew Mason <onshorestudios@gmail.com>",
   "dependencies": {
     "gatsby": "^2.2.6",

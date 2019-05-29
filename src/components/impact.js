@@ -40,7 +40,7 @@ function Impact() {
             <div className="mb-4">
               <h2 className="card-header">UNCW Mentor Award</h2>
               <a
-                href="https://uncw.edu/honors/quick-as/meetfaculty.html"
+                href="https://uncw.edu/honors/quick-links/meetfaculty.html"
                 title="UNCW Honors Faculty Mentor Awards"
                 className="btn"
                 target="_blank"
