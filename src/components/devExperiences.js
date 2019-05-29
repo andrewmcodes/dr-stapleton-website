@@ -1,4 +1,3 @@
-import { Link } from 'gatsby'
 import React from 'react'
 
 function DevExperiences() {
@@ -22,14 +21,14 @@ function DevExperiences() {
           UNCW for granted because one day you could be running your own
           business as well.
         </p>
-        <Link
-          to="https://www.onshorestudios.com/"
+        <a
+          href="https://www.onshorestudios.com/"
           title="Onshore Studios"
           className="btn"
           target="_blank"
           rel="noopener noreferrer">
           Visit our Site
-        </Link>
+        </a>
       </div>
     </section>
   )
